@@ -5,7 +5,7 @@ job('MSBuild Test') {
         github('ecg-protool/REGAIT.MX', 'ssh')
         credentials('jenkins-ssh')
       }
-      branches('master')
+      branches('jenkins-prototype')
     }
   }
   triggers {
