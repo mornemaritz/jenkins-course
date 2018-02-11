@@ -15,6 +15,8 @@ job('MSBuild Test') {
     msBuild {
       msBuildInstallation('MSBuild-14')
       buildFile('MX.sln')
+      args('/p:Configuration=Release')
+      args('/t:restore')
     }
   }
 }
