@@ -2,9 +2,10 @@ job('MSBuild Test') {
   scm {
     git {
       remote {
-        github('git@github.com:ecg-protool/REGAIT.MX.git', 'ssh')
+        github('ecg-protool/REGAIT.MX.git', 'ssh')
         credentials('jenkins-ssh')
       }
+      branches('master')
     }
   }
   triggers {
