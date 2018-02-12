@@ -12,7 +12,6 @@ job('MSBuild Test') {
     scm('H/5 * * * *')
   }
   steps {
-    batchFile("C:\\JenkinsTools\\nuget.exe restore MX.sln")
     msBuild {
       msBuildInstallation('MSBuild-14')
       buildFile('MX.sln')
