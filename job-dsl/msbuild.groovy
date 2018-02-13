@@ -17,7 +17,7 @@ job('MSBuild Test') {
       buildFile('MX.sln')
       args('/p:Configuration=Release')
     }
-    batchFile('C:\\JenkinsTools\\NUnit.Console-3.8.0\\nunit3-console.exe MX.UnitTest\\bin\\Release\\MX.UnitTest.dll --out=nunit-result.xml')
+    batchFile('C:\\JenkinsTools\\NUnit.Console-3.8.0\\nunit3-console.exe MX.UnitTest\\bin\\Release\\MX.UnitTest.dll --result=nunit-result.xml')
   }
   publishers {
     archiveXUnit {
