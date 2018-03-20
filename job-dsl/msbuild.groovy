@@ -1,4 +1,4 @@
-job('MSBuild Test') {
+job('MX - Web') {
   scm {
     git {
       remote {
