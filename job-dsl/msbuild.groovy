@@ -18,11 +18,4 @@ job('MX - Web') {
       args('/p:Configuration=Release')
     }
   }
-  publishers {
-    archiveXUnit {
-      nUnit {
-        pattern('nunit-result.xml')
-      }
-    }
-  }
 }
