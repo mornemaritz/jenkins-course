@@ -13,11 +13,10 @@ job('MX - Web') {
   }
   steps {
     msBuild {
-      msBuildInstallation('MSBuild-14')
+      msBuildInstallation('MSBuild-15')
       buildFile('MX.sln')
       args('/p:Configuration=Release')
     }
-    batchFile('C:\\JenkinsTools\\NUnit.Console-3.8.0\\nunit3-console.exe MX.UnitTest\\bin\\Release\\MX.UnitTest.dll --result=nunit-result.xml')
   }
   publishers {
     archiveXUnit {
